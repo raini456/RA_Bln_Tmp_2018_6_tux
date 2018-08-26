@@ -1,0 +1,128 @@
+.container{    
+    box-shadow: 0 0 5% gray;
+}
+html {
+    font-size: 2vh;
+}
+header{
+    width:100%;
+    top:0;
+    left:0; 
+}
+#banner{
+    width:100%;
+    padding:0 0 10% 0;
+    top:0;
+    left:0;
+    background-image: url("../assets/banner.jpg");
+    background-size:100% 100%;  
+    border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+    margin:0 0 6% 0;
+}    
+#logo, #titleBanner{
+    margin:5% 0 -25% 0;
+    width:60%; 
+    padding:0 0 60% 0;
+    background-image:url('../assets/logo.png'); 
+    background-size:100% 100%;
+    background-repeat:no-repeat;   
+}
+#titleBanner{
+    margin-top:1%;
+    width:100%;
+    background-image:url('../assets/schriftzugBanner.png');
+    background-size:95% 55%;   
+    padding:0 0 10% 0; 
+
+}
+#navSmall, #navBig{   
+    display:none;    
+    list-style: none;    
+}
+#navSmall{
+    display:inline-block;  
+    margin:2% 0 0 7%;  
+}
+#navBig{
+    margin-left:auto;
+    margin-bottom: auto;
+}   
+
+#navBig li, #navSmall li {
+    text-align:center;    
+    float:left;
+}
+
+nav{
+    margin:-10% 0 0 0;  
+    width:100%;  
+}
+
+#navBig li{    
+    padding-bottom:5%;    
+    width:33%;
+}
+#navBig li a, #navSmall li a{
+    padding:20% 0 0;    
+    color:whitesmoke;
+    text-shadow:0 0 3px black;
+    font-size: 190%;
+    text-decoration: none;
+}/**/
+
+#navSandwich{
+    width:18%;
+    display: none;
+    padding:0 0 18% 0;    
+    background-image:url('../assets/menubarIcon.png');
+    margin:-15% 0 0 40%;
+    z-index:5;    
+    cursor: pointer;    
+}
+
+/*
+#navSmall li {
+    width:100%;        
+    list-style: none;
+    padding:0 0 3% 2%;
+    
+}
+#navSmall li a{
+    font-size:1.4rem;
+    margin-bottom:1%;
+}*/
+.btnNav, .btnNavBig{
+   width:5rem;    
+   height:5rem;
+   background-repeat:no-repeat;
+   background-position: bottom;
+   background-size:100% 100%;
+   cursor:pointer;  
+   z-index: 2;
+}
+#btnNavVerkehr, #btnNavFamilie, #btnNavMiete{
+    background-image: url('../assets/linkBulletVerkehr.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;    
+}    
+#btnNavFamilie{
+    background-image: url('../assets/linkBulletFamilie.png');
+
+}
+#btnNavMiete{
+    background-image: url('../assets/linkBulletMiete.png');
+}
+.btnNavBig{
+    width:8rem;
+    margin:-25% 0 0 10%;
+    padding:0 0 60% 0;
+}
+#navToggleSmall{
+    display: none;
+    z-index: 2;
+}
+/*
+#siteWidth{
+    text-align: center;
+}*/

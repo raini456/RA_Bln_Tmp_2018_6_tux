@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de-DE" ng-app="mainApp">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ <title>Rechtsanwalt Berlin Tempelhof</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=yes">
+ <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+ <link rel="shortcut icon" type="image/x-icon" href="assets/fav.ico">
+ 
+ 
+   
+   
+   
+ <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="assets/css/format.css">
+ <!--link rel="stylesheet" href="css/slideshow.css"-->        
+ <link rel="stylesheet" href="css/responsive.css">   
+ <script src="assets/js/lib/jquery.min.js"></script>    
+ <script src="assets/js/lib/bootstrap.js"></script>   
+ <script src="assets/js/lib/angularJS.js"></script>
+ <script src="assets/js/lib/ngRoute.js"></script>        
+ <script src="assets/js/mainJS.js"></script>
+ <script src="assets/js/linksToggle.js"></script>
+ <!-- THREE_COLUMN -->			
+ <style>
+     
+ </style>
+</head>
+
+<body ng-controller="indexCtrl">  
+	<!-- --------- HEADER ------------ -->	        
+  <div ng-include="'html/header.html'"></div>
+  <!------------ MAINTEIL MIT SEITENNAVI UND SEITENBILD ------->
+  <div class="row" id="main">
+      
+    <!--ANGULAR-TEST-->
+      <!--input type="text" ng-model="test"><br>
+      {{test}}
+      <-->
+      <!--ASIDE_LEFT, HAUPTNAVI-->
+      <div  class="left col-2 bg-warning pt-5">
+        <div  ng-include="'html/asideLeft.html'"></div>
+      </div>
+      <!-- ---------- HAUPTINHALT ------ -->
+      <div class="main col-8 p-5">
+        <main ng-view id="view"></main>
+      </div>
+      <!-- ASIDE_RIGHT -->
+      <div class="right col-2">
+        <aside ng-include="'html/asideRight.html'"></aside>
+      </div>				
+    </div>
+
+    <!----- FOOTER ---------- --> 
+    <div class="row">
+      <div class="col-12 bg-success pt-3">
+       <!--footer id="footer" ng-include="'html/footer.html'"></footer-->
+     </div>
+   </div>   
+   <div id="siteWidth">{{siteWidth}}</div><br>
+ </body>
+
+ </html>	
+		
+		
+		
+		

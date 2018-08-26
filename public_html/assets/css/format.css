@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+/*
+	Box Modell anpassen
+*/
+
+
+* {
+	box-sizing: border-box;
+	
+}
+
+
+html {
+	font-size: 2vh;
+}
+body {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	margin: 0;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+#wrapper {
+	border: 1px solid silver;
+	margin: 0px auto;
+}
+
+/******background-images*********/
+#buerozeiten, #imgEmail, #picMain, #change0, #change1, #taetigkeiten, #navSandwich{
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width:90%;
+    padding:0 0 80% 0;
+}
+/********* HEADER ****************************/
+
+/*header.top {
+	overflow:hidden; 
+	height: 120px;
+	background-color: rgb(255, 255, 230);    
+	background-image: url("../assets/banner.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;	    
+	border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+    margin:-4% 0 10% 0;    
+    z-index: 0;
+}
+.logo{
+    
+    margin:5% 0 5% 2%;    
+    height: 75%;
+    width:22%;
+    background-image:url('../assets/logo.png'); 
+    background-size:100% 100%;
+    float:left;
+}
+
+ .titleBanner {	  
+    width:55%;
+    height:100%;
+    margin: 5% 0 0 3%;
+	color: white;
+    text-shadow: 0 0 10px #000;
+    font-weight: 100;
+    float:left; 
+    z-index:0;   
+}
+.titleBanner h2{
+    text-align:center;
+    font-size:150%;
+    z-index: 0;
+}*/
+
+
+/*** NAVIGATION ***/
+nav{    
+    left:0;
+    margin:0;
+    padding:0;
+}
+#navBig, #navSmall{
+	width:100%;
+    margin-top:-1%;    
+}
+#navBig{
+    display:none;
+}
+nav #navBig li, nav #navSmall li {
+	float:left;
+    background-image:url('../assets/images/linkBullets.png');
+    background-size:40% 60%;
+    background-repeat:no-repeat;
+    background-position: bottom;
+}
+nav #navBig li{
+	background-size:60% 60%;
+	padding-bottom:5%;
+	margin-left:11%;
+}
+nav #navBig li a{
+    font-size: 2rem;
+}
+nav #navBig li:active, nav #navBig li:checked, nav #navBig li:focus{
+    background-image:url('../assets/images/linkBulletsHov.png');
+}
+#navSandwich{
+    width:18%;
+    padding:0 0 18% 0;    
+    background-image:url('../assets/images/menubarIcon.png');
+    margin:-15% 0 0 40%;
+    z-index:5;    
+    cursor: pointer;    
+}
+nav #navSmall li {
+    margin:0;
+}
+nav #navSmall li a{
+    font-size:1.8rem;
+}
+#navSmall{
+    width:110%;
+	display:inline-block;	
+}
+/*
+#navToggleSmall{
+    display: none;
+    z-index: 2;
+}*/
+#navToggleSmall li{
+    border-bottom:2px solid gold;
+    margin-left:-20%;
+    text-align: center;
+    font-size:250%;
+    color:#5f5f5f;
+}
+#navLeftSmall li a{
+    text-decoration: none;
+    font-size:2rem;
+    color:darkgray;
+}
+/* Waagerechte NAvigation ***/
+nav ul {	
+	list-style-type: none;	
+}
+
+nav ul li a {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	font-size: 1.4rem;	
+	/* Dauer für die Änderung */
+	transition: 0.5s;
+	
+	
+}
+
+nav#navLeft{
+    display:none;
+    margin-left:-40%;
+}
+
+#navLeft ul li a, li#liKanzlei{
+	font-size:1.8rem;
+}
+#navLeft ul li ul li.liUlKanzlei a{
+    font-size:1.7rem;
+}
+
+#navLeft ul li a:hover{
+    border-left:2px solid gold;
+    margin-left:4%;
+}
+/* Pseudo Selektor */
+nav ul li a:hover {
+    text-decoration:none;
+	color: #000;	
+    text-shadow:0 0 10px gold;	
+}
+nav ul li a:active, nav ul li a:checked, nav ul li a:focus{
+    text-decoration:none;
+    color:orange;
+}
+.navTopGebiete, .navTopGebieteSmall, .siteContentTaetigk{
+    
+}
+#navLeft ul#ulKanzlei{
+    display:none; 
+    margin-left:-58%;    
+}
+#navLeft ul li#liKanzlei{
+	cursor:pointer;
+}
+#navLeft ul li.liUlKanzlei > a{
+	background-color:#fff;
+	font-size:1.2rem;
+	font-color:darkgray;    
+}
+
+/*#navLeft ul li#liKanzlei:hover > #ulKanzlei{
+    display:block;
+}*/
+/***ROW-Formatierung***/
+
+#row {
+	/* border: 1px solid red; */
+}
+
+
+#row > * {
+	float:left;
+}
+
+#row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/** Rahmen um die Spalten ****/
+div.border {
+	border: 1px solid orange;
+	margin: 2px; 
+	padding: 5px;
+}
+
+#row aside {
+	font-size: 0.8rem;
+}
+
+/*********** VIEW ******************/
+#view{     
+    width:100%;
+    padding:0 0 40% 0;
+    box-shadow:0 0 2px gray;
+}
+/********MAIN*******/
+#picMain{    
+    background-image:url(../assets/images/Rainer_DoeringKanzlei.png);
+    width:90%;
+    padding: 0 0 80% 0;
+    margin-left:3%;    
+    box-shadow: 0 3px 10px gold;
+}
+#untertitelMain{
+    width:95%;
+    text-align: center;
+    font-size:1.3rem;
+}
+#textDatenschutz{
+	font-size:1.2rem;
+}
+/*******ASIDE_RIGHT*********/
+#buerozeiten{
+    background-image:url('../assets/images/Buerozeiten.jpg');
+    margin:15% 0 0 5%;
+}
+#imgEmail{
+    background-image:url('../assets/images/email.png');
+    width:50%;
+    padding:0 0 40% 0;
+    margin:0 auto;
+}
+/**** UNTERSEITEN *****/
+#startTextKanzlei{
+    margin: 0 0 0 8%;
+}
+/*****TÄTIGKEITSBEREICHE******/
+#schwerpunkte{
+    width:100%;
+}
+#schwerpunkteAll{
+	float:left;
+}
+.changeSite, .changeSite1{
+    width:10%;            
+    position: fixed; 
+    z-index:5;      
+}
+.changeSite1{	
+    background-color:red;
+}
+.taetigkeitenWrapper{
+    float:left;
+    margin:3% 0 0 3%;
+}
+.linkToSiteRight{
+    margin-left:10%;
+    float:right;
+}
+#change0, #change1{
+	width:30%;
+	padding:0 0 80% 0;	
+	/*z-index:5;*/
+    background-image:url('../assets/images/buttonRechtsSlim.png');
+} 
+#change0{
+    margin-left:-30%;
+}
+#change1{    
+    background-image:url('../assets/images/buttonLinksSlim.png'); 
+}
+.taetigkWrapper{
+   float:left; 
+   text-align: center;
+}
+.plcHldr{
+    margin-left:3%;    
+    width:10%;
+    padding:0 0 10% 0;
+    background-color:blue;
+}
+/*** taetigkeitsschwerpunkte ****/
+#taetigkeiten{
+    background-image:url('../assets/images/gesetzesbuch.png');
+    width:60%;
+    padding:0 0 60% 0;
+    background-color:gold;    
+}
+.siteContent{
+    font-size:135%; 
+    margin:2% 0 0 12%;       
+    width:65%;
+    height:20%;    
+    overflow:auto; 
+    text-align:center;     
+}
+.siteContent h2{        
+    font-size:120%;    
+    text-align:center;
+}
+.siteContent p{
+    text-align:left;        
+}
+
+/*** team ***/
+.teamH2{
+    margin:0 0 0 40%;
+}
+.teamContent{
+    margin:0 0 0 22%;
+}
+#textfeldTeam, #articleRecht{
+    font-size:130%;	
+}
+#textfeldTeam{
+    padding:5%; 
+}
+#articleRecht{
+	padding:0 5%;
+}
+
+.labels{    
+    width:100%;
+}
+/*** Email/Kontakt ***/
+#inputSubmit{
+   display: none;
+   cursor:pointer;
+}
+
+/*** Datenschutz ***/
+#articleDatenschutz, #article1Kanzlei{
+    padding:5%;
+}
+
+/****  FOOTER ********/
+
+footer {
+	border-top: 2px solid orange;
+    padding:2% 0;    
+	border-bottom: 2px solid orange;
+    font-size:0.9rem;
+    text-align:center;
+    background-color:#fb8a05;
+    opacity:0.5;    
+}
+/**** Responsive Probleme *********************/
+
+img.responsive {
+	max-width: 25%;
+	height: auto;
+}
+
+
+
+
+/********** Media Queries ***************************/
+
+
+
+/* Attribut- Selector */
+/* [class="col-l-6"] { */
+
+/* Attributselktor für den Anfang des Wertes */
+/* Beim handy hat alles die volle Breite */
+[class*="col-"] {
+
+	width: 100%;
+}
+
+/********** Für Tablets **********************/
+
+@media only screen and (min-width: 768px) {
+
+/* GRID Layout vordefinieren *****************/
+
+	.col-m-1 { width: 8.33%; }
+	.col-m-2 { width: 16.66%; }
+	.col-m-3 { width: 25%; }
+	.col-m-4 { width: 33.33%; }
+	.col-m-5 { width: 41.66%; }
+	.col-m-6 { width: 50%; }
+	.col-m-7 { width: 58.33%; }
+    .col-m-8 { width: 66.66%; }
+    .col-m-9 { width: 75%; }
+	.col-m-10 {width: 83.33%; }
+	.col-m-11 {width: 91.66%; }
+	.col-m-12 {width: 100%; }
+}
+
+/**** Für Desktops ***********************/
+
+@media only screen and (min-width: 1024px) {
+
+/* GRID Layout vordefinieren *****************/
+
+	.col-l-1 { width: 8.33%; }
+	.col-l-2 { width: 16.66%; }
+	.col-l-3 { width: 25%; }
+	.col-l-4 { width: 33.33%; }
+	.col-l-5 { width: 41.66%; }
+	.col-l-6 { width: 50%; }
+	.col-l-7 { width: 58.33%; }
+    .col-l-8 { width: 66.66%; }
+    .col-l-9 { width: 75%; }
+	.col-l-10 {width: 83.33%; }
+	.col-l-11 {width: 91.66%; }
+	.col-l-12 {width: 100%; }
+
+	#wrapper {
+		width: 80%;
+	}
+
+	/*************** HAUPTINHALT ****************/
+
+	/********* LINKER INHALT ***********************/
+/*****Formatierung Typo3 Elements******/
+
+div.grid-2-columns>div.asideLeft{
+	float:left;	
+	width:20%;
+}
+div.grid-2-columns>div.right{
+	font-size:0.6rem;
+}
+}
+
